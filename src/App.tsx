@@ -102,13 +102,16 @@ const App = () => {
  return (
   <div className="app">
    <h1>Board Dapp</h1>
+   <h2>Switch Network to Goerli after connecting</h2>
    <button onClick={connect}>Connect Wallet</button>
    {/* <h2>{userAddr}</h2> */}
    <button onClick={setRandomColors}>Randomize Cell colors</button>
    <div className="dapp">
     <div className="set_values">
      <h2>Input X values between [0,4] </h2>
+
      <input type="text" id="x-input" placeholder="Input X value" />
+
      <h2>Input Y values between [0,6] </h2>
      <input type="text" id="y-input" placeholder="Input Y value" />
      <button id="set-xy" onClick={getCellColors}>
